@@ -20,9 +20,9 @@ function App() {
     const fetchdata=async()=>{
       try{ 
         const response=await axios.get("https://restcountries.com/v3.1/all")
-       // console.log(response.data);
+        console.log("newline");
         setcountrydata(response.data)
-       
+        
       }
       catch(error){
         console.log(error);
