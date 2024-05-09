@@ -1,0 +1,7 @@
+.data{
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   width: 100px;
+   height:200vh;
+}
