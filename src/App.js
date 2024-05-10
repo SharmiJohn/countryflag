@@ -5,9 +5,9 @@ import style from "./App.module.css"
 
 function Tile({flagname,altname,name}) {
   return (
-    <div >
-      <img src={flagname} alt={altname}/>
-      <h3>{name}</h3>
+    <div className={style.bodydiv}>
+      <img className={style.image} src={flagname} alt={altname}/>
+      <h3 className={style.heading}>{name}</h3>
     </div>
   )
 }
@@ -36,13 +36,12 @@ function App() {
   return (
     <div>
       
-    <div className={style.data} >
-      <div>
+   
+      <div className={style.data}>
         {countrydata.map((data,index)=><Tile key={index} flagname={data.flags.png} altname={data.flags.alt} name={data.name.common} />)}
        
       </div>
-    </div>
-
+    
     </div>
   );
 }
